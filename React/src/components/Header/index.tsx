@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-export const Header= (prosps: { imagem: string | undefined; }) => {
+export const Header = (prosps: { imagem: string | undefined; }) => {
     return(
         <Container>
             <img src={prosps.imagem} alt="HackaTur" />

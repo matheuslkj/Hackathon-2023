@@ -25,6 +25,18 @@ export const GlobalStyle = createGlobalStyle`
         height: 754px;
     }
 
+    footer {
+        background-color: var(--detalhes);
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    footer p {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+    }
+
     /* button {
         cursor: pointer;
     }

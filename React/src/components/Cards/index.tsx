@@ -7,21 +7,21 @@ export const Cards = (prosps: {imagemD: string, imagemC: string, imagemE: string
                 <div className="circulo">
                     <img src={prosps.imagemD} alt="Dinheiro" />
                 </div>
-                <p><strong>Dinheiro</strong></p>
+                <h4>Dinheiro</h4>
                 <p>Dinheiro em espécie ou PIX</p>
             </div>
             <div className="card">
                 <div className="circulo">
                     <img src={prosps.imagemC} alt="Cartão" />
                 </div>
-                <p><strong>Cartão</strong></p>
+                <h4>Cartão</h4>
                 <p>Pagamento em crédito ou débito</p>
             </div>
             <div className="card">
                 <div className="circulo">
                     <img src={prosps.imagemE} alt="Estudantes" />
                 </div>
-                <p><strong>Para Estudantes</strong></p>
+                <h4>Para Estudantes</h4>
                 <p>Desconto de 50% para estudantes, com todas as opções de pagamento</p>
             </div>
         </Card>

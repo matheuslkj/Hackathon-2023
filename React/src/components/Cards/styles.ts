@@ -1,20 +1,16 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-    grid-gap: 10px 10px;
-    padding: 20;
-    margin: 20;
-    border-radius: 8;
+    grid-gap: 15px 15px;
     width: 200;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 30px;
     flex-wrap: wrap;
 
     .card {
-        background-color: #e0e5eb;
-        opacity: 0.95;
-        word-break: break-word;
+        background-color: var(--box);
+        opacity: 0.9;
         width: 220px;
         height: 400px;
         display: grid;
@@ -26,11 +22,6 @@ export const Card = styled.div`
         width: 120px;
 	    height: 120px;
 	    border-radius: 50%;
-	    overflow: hidden;
-	    float: unset;
-        margin-left: auto;
-        margin-right: auto;
-	    margin: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,7 +37,16 @@ export const Card = styled.div`
         height: 75px;
     }
 
+    h4 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: -80px 0 0;
+    }
+
     p {
         text-align: center;
+        margin: -80px 0 0;
     }
 `

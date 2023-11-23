@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
     :root {
-        --box: 	#DCDCDC;
+        --box: 	#e0e5eb;
         --detalhes: #478ac9;
     }
 
@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     .banner {
         width: 100%;
         height: 754px;
+        margin-bottom: -80px;
     }
 
     footer {

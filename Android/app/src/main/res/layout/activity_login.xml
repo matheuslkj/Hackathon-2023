@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/containerComponente"
+        style="@style/ContainerComponente"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="43dp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        style="@style/Etd"
+        android:layout_alignTop="@+id/containerComponente"
+        android:hint="Email"
+        android:drawableRight="@drawable/baseline_email"
+        app:layout_constraintEnd_toEndOf="@id/containerComponente"
+        app:layout_constraintStart_toStartOf="@id/containerComponente"
+        app:layout_constraintTop_toTopOf="@id/containerComponente" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/Etd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        app:layout_constraintEnd_toEndOf="@id/containerComponente"
+        app:layout_constraintStart_toStartOf="@id/containerComponente"
+        app:layout_constraintTop_toTopOf="@id/etUsername"
+        android:hint="Senha"
+        android:drawableRight="@drawable/baseline_olho"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="@id/containerComponente"
+        app:layout_constraintStart_toStartOf="@id/containerComponente"
+        android:text="Lembre de Mim" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbRememberMe"
+        android:layout_marginTop="32dp"
+        android:text="Cadastrar" />
+
+</RelativeLayout>

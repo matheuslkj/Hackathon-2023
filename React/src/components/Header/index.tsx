@@ -6,7 +6,7 @@ export const Header = (prosps: { imagem: string | undefined; }) => {
             <img src={prosps.imagem} alt="HackaTur" />
             <nav>
                 <ul>
-                    <li className="link"><a>Página Inicial</a></li>
+                    <li><a className="link">Página Inicial</a></li>
                     <li><a>Sobre</a></li>
                     <li><a>Horários</a></li>
                 </ul>

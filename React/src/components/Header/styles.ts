@@ -40,4 +40,13 @@ export const Container = styled.header`
             color: var(--detalhes);
         }
     }
+
+    .link{
+        color: var(--detalhes);
+        transition: all 1s;
+
+        &:hover {
+            color: #000000;
+        }
+    }
 `

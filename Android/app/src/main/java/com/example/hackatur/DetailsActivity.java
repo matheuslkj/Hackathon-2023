@@ -19,11 +19,9 @@ public class DetailsActivity extends AppCompatActivity {
         Transporte transporte = getIntent().getParcelableExtra("transporte");
 
         if (transporte != null) {
-            TextView idTextView = findViewById(R.id.idTextView);
             TextView rotaTextView = findViewById(R.id.rotaTextView);
             TextView descricaoTextView = findViewById(R.id.descricaoTextView);
             TextView placaTextView = findViewById(R.id.placaTextView);
-            TextView assentoTextView = findViewById(R.id.assentoTextView);
             TextView transportadoraTextView = findViewById(R.id.transportadoraTextView);
             TextView localPartidaTextView = findViewById(R.id.localPartidaTextView);
             TextView destinoTextView = findViewById(R.id.destinoTextView);
@@ -35,12 +33,10 @@ public class DetailsActivity extends AppCompatActivity {
             TextView emailTextView = findViewById(R.id.emailTextView);
             TextView sitioTextView = findViewById(R.id.sitioTextView);
 
-            idTextView.setText("ID: " + String.valueOf(transporte.getId()));
             rotaTextView.setText("Rota: " + String.valueOf(transporte.getRota()));
             descricaoTextView.setText("Descrição: " + transporte.getDescricao());
             placaTextView.setText("Placa: " + transporte.getPlaca());
-            assentoTextView.setText("Assento: " + String.valueOf(transporte.getAssento()));
-            transportadoraTextView.setText("Transportadora: " + String.valueOf(transporte.getTransportadora()));
+            transportadoraTextView.setText("Compania: " + String.valueOf(transporte.getTransportadora()));
             localPartidaTextView.setText("Local de Partida: " + transporte.getLocalPartida());
             destinoTextView.setText("Destino: " + transporte.getDestino());
             saidaTextView.setText("Saída: " + transporte.getSaida());
@@ -49,7 +45,7 @@ public class DetailsActivity extends AppCompatActivity {
             enderecoTextView.setText("Endereço: " + transporte.getEndereco());
             telefoneTextView.setText("Telefone: " + String.valueOf(transporte.getTelefone()));
             emailTextView.setText("Email: " + transporte.getEmail());
-            sitioTextView.setText("Sitio: " + transporte.getSitio());
+            sitioTextView.setText("Site: " + transporte.getSitio());
         }
     }
 }

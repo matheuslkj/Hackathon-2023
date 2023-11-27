@@ -10,7 +10,7 @@ public class Transporte  implements Parcelable {
     private int id;
 
     @SerializedName("rota")
-    private int rota;
+    private String rota;
 
     @SerializedName("descrição")
     private String descricao;
@@ -22,7 +22,7 @@ public class Transporte  implements Parcelable {
     private int assento;
 
     @SerializedName("transportadora")
-    private int transportadora;
+    private String transportadora;
 
     @SerializedName("localPartida")
     private String localPartida;
@@ -43,7 +43,7 @@ public class Transporte  implements Parcelable {
     private String endereco;
 
     @SerializedName("telefone")
-    private long telefone;
+    private String telefone;
 
     @SerializedName("email")
     private String email;
@@ -55,7 +55,7 @@ public class Transporte  implements Parcelable {
         return id;
     }
 
-    public int getRota() {
+    public String getRota() {
         return rota;
     }
 
@@ -71,7 +71,7 @@ public class Transporte  implements Parcelable {
         return assento;
     }
 
-    public int getTransportadora() {
+    public String getTransportadora() {
         return transportadora;
     }
 
@@ -99,7 +99,7 @@ public class Transporte  implements Parcelable {
         return endereco;
     }
 
-    public long getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
@@ -113,18 +113,18 @@ public class Transporte  implements Parcelable {
 
     protected Transporte(Parcel in) {
         id = in.readInt();
-        rota = in.readInt();
+        rota = in.readString();
         descricao = in.readString();
         placa = in.readString();
         assento = in.readInt();
-        transportadora = in.readInt();
+        transportadora = in.readString();
         localPartida = in.readString();
         destino = in.readString();
         saida = in.readString();
         chegada = in.readString();
         nome = in.readString();
         endereco = in.readString();
-        telefone = in.readInt();
+        telefone = in.readString();
         email = in.readString();
         sitio = in.readString();
 
@@ -150,18 +150,18 @@ public class Transporte  implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(id);
-        dest.writeInt(rota);
+        dest.writeString(rota);
         dest.writeString(descricao);
         dest.writeString(placa);
         dest.writeInt(assento);
-        dest.writeInt(transportadora);
+        dest.writeString(transportadora);
         dest.writeString(localPartida);
         dest.writeString(destino);
         dest.writeString(saida);
         dest.writeString(chegada);
         dest.writeString(nome);
         dest.writeString(endereco);
-        dest.writeInt((int) telefone);
+        dest.writeString(telefone);
         dest.writeString(email);
         dest.writeString(sitio);
     }

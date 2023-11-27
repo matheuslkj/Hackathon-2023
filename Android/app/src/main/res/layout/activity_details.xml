@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/rotaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rota: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/idTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/descricaoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/rotaTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/placaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/descricaoTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/assentoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assento: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/placaTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/transportadoraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transportadora: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/assentoTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/localPartidaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local de Partida: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/transportadoraTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/destinoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destino: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/localPartidaTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/saidaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saída: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/destinoTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/chegadaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chegada: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/saidaTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/nomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/chegadaTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/enderecoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/nomeTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/telefoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/enderecoTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/telefoneTextView"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/sitioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sítio: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/emailTextView"
+        android:layout_marginBottom="8dp"/>
+
+</RelativeLayout>

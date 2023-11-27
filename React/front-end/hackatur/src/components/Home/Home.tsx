@@ -36,27 +36,30 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div>
-      <styles.RotasContainer>
-        <h2>Rotas Disponíveis</h2>
-      </styles.RotasContainer>
+    <styles.Tabela>
+      <thead>  
+        <styles.RotasContainer>
+          <td>Rotas Disponíveis</td>
+          <td>Detalhes</td>
+        </styles.RotasContainer>
+      </thead>
       <styles.AppContainer>
         {veiculos.map((veiculo) => (
           <styles.StyledVeiculo key={veiculo.id} onClick={() => handleVeiculoClick(veiculo)}>
             <styles.VeiculoContent>
               <span>{veiculo.descrição}</span>
-              <styles.VerDetalhesButton onClick={() => handleVerDetalhes(veiculo)}>
-                Ver Mais Detalhes
-              </styles.VerDetalhesButton>
             </styles.VeiculoContent>
+              <styles.VerDetalhesButton> 
+                <button onClick={() => handleVerDetalhes(veiculo)}>Ver Mais Detalhes</button>
+              </styles.VerDetalhesButton>
           </styles.StyledVeiculo>
         ))}
       </styles.AppContainer>
       {selectedVeiculo && (
         <VeiculoModal veiculo={selectedVeiculo} onClose={closeModal} />
-      )}
-    </div>
-  );
-};
+        )}
+    </styles.Tabela>
+    );
+  };
 
-export default Home;
+  export default Home;

@@ -5,9 +5,10 @@ import { Veiculo } from '../Veiculo/Veiculo';
 
 
 const VeiculoModal: React.FC<{ veiculo: Veiculo; onClose: () => void }> = ({ veiculo, onClose }) => (
-  <ModalOverlay>
+  <ModalOverlay onClick={onClose}>
     <ModalContent>
       <h2>{veiculo.descrição}</h2>
+      <br />
       <p><strong>Rota:</strong> {veiculo.rota}</p>
       <p><strong>Placa:</strong> {veiculo.placa}</p>
       <p><strong>Transportadora:</strong> {veiculo.transportadora}</p>
@@ -19,6 +20,7 @@ const VeiculoModal: React.FC<{ veiculo: Veiculo; onClose: () => void }> = ({ vei
       <p><strong>Telefone:</strong> {veiculo.telefone}</p>
       <p><strong>E-mail:</strong> {veiculo.email}</p>
       <p><strong>Site:</strong> {veiculo.sitio}</p>
+      <br />
       <CloseButton onClick={onClose}>Fechar Modal</CloseButton>
     </ModalContent>
   </ModalOverlay>

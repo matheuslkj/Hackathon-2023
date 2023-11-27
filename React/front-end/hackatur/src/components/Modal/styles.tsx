@@ -20,13 +20,18 @@ export const ModalContent = styled.div`
   max-width: 400px;
   width: 100%;
   text-align: left;
+
+  h2{
+    text-align: center;
+  }
 `;
 
 export const CloseButton = styled.button`
-  background: #3498db;
+  background: var(--detalhes);
   color: #fff;
   padding: 8px 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 150px;
 `;

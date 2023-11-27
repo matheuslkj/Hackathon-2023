@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ imagem }) => {
         <ul>
           <li className="link"><Link to="/">Página Inicial</Link></li>
           <li><Link to="/sobre">Sobre</Link></li>
-          <li><Link to="/Home">Horários</Link></li>
+          <li><Link to="/Home">Rotas</Link></li>
         </ul>
       </nav>
     </Container>

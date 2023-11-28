@@ -72,7 +72,7 @@
         style="@style/button"
         android:layout_below="@+id/cbRememberMe"
         android:layout_marginTop="128dp"
-        android:text="Cadastrar"
+        android:text="Login"
         android:textSize="18sp"
         android:textStyle="bold" />
 

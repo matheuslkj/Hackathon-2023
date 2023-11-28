@@ -1,6 +1,5 @@
 import { GlobalStyle } from './styles/global'
 import Header from "./components/Header"
-import { Cards } from './components/Card'
 import { Outlet } from "react-router-dom"
 
 import Logo from '../imagens/Logo.png'

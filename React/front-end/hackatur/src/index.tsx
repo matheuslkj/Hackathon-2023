@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './components/Home/Home.tsx'
+import List from './components/List/List.tsx'
+import Sobre from './components/Sobre/Sobre.tsx'
 import { Cards } from './components/Card/index.tsx'
 
 import dinheiro from '../imagens/Dinheiro.png'
@@ -23,9 +24,14 @@ const router = createBrowserRouter([
     />
       },
       {
-        path: "Home",
-        element:<Home/>
+        path: "List",
+        element:<List/>
+      },
+      {
+        path: "Sobre",
+        element : <Sobre/>
       }
+
     ]
   }
 ]);

@@ -13,8 +13,8 @@ const Header: React.FC<HeaderProps> = ({ imagem }) => {
       <nav>
         <ul>
           <li className="link"><Link to="/">Página Inicial</Link></li>
-          <li><Link to="/sobre">Sobre</Link></li>
-          <li><Link to="/Home">Rotas</Link></li>
+          <li><Link to="/Sobre">Sobre</Link></li>
+          <li><Link to="/List">Rotas</Link></li>
         </ul>
       </nav>
     </Container>

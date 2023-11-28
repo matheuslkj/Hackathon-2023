@@ -7,7 +7,7 @@ export const Container = styled.header`
     justify-content: space-between;
 
     img {
-        width: 226px;
+        width: 200px;
         height: 110px;
         padding-left: 105px;
         padding-top: 9px;
